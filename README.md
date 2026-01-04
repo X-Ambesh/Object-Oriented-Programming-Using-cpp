@@ -1,6 +1,7 @@
 # Object-oriented-programing-with-c++
 # Q1. Write a C++ program that takes two integers as input from the user and displays their sum.
 a. Sum if two numbers
+
 Input (code)
 
     #include <iostream>
