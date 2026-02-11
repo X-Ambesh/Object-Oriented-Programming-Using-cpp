@@ -1,325 +1,164 @@
-### Tokens in cpp
+C++  important questions 
 
-  Tokens are smallest individual enlement of a programing languge.  
-  
-  Tokens are caterised into :
+### Write a code to print sum of even digits and product of odd digits of a number.
 
-  K >>>  Keyword  
-  I >>> identifer   
-  L >>> Lierals/constants   
-  P/S >>>Punctuators/Seperators  
-  O >>> Operators  
-
-Tokens
-
-- Keywords : Reserved words by a programing language   
-    - Example : if, while, for, float, char, double 
-- Identifier : Are the names given to variables / class / function 
-
-    - Example int a = 5;
-
-        - int = Keyword
-        - a = identifier > Variable
-    - Rules for identifiers
-     
-        - Keywords can't be used as identifiers.
-        - First character must be alphabet or underscore ( _ ).
-        - No symboles except underscore ( _ )is allowed. 
-        - NO space is allowed between names.
-        - Identifiers are case sensetive.
-- Literals/constants
-    
-    Literals/Constants are fixed values whose value cannot be changed during the execuation of the program.
-
-    - Const : create a constant variable
-        - Exmple : 
-
-                const int a = 10 ;   
-                a = 20 ; WRONG ERROR
-
-- Punctuators/seperators 
-
-  It seperates one elements from other.
-    - Eample 
-
-            int a,b;
-            float x,y;
-            \\; , (,) ,"",[],(),'',{} etc are punctuators.
-
-- Operators 
-    - To perform specific operations 
-    - Arthemetic operators
-        - (+),(-),(*),(/),(%)
-    - Relatioal Operators 
-         - (>,<,>=,<=,==,!=)
-    - Assignment operators
-        - =
-        - Short hand assignment operators
-            - +=, -= ,*= ,/= , %=
-    - Increment / Decrement operator
-        - a++ postfix
-        - a-- postfix
-        - --a prefix
-        - ++a prefix
-    - Logical Operator
-        - and (&&) ex (a>b) && (a>c)
-        - or (||)  ex (a>b) || (a>c)
-        - not (!)  ex !(a>c)
-    - Conditional  operators  
-        - ?
-        - : 
-            - example
-            
-                     c=a>b?a:b;
-### Datatypes
-
-- User-defined data types
-    - Structure
-    - Union 
-    - Class
-
-- built-in data types
-    - Integral
-        - int 
-        - long
-
-    - void 
-    - floting 
-        - float
-        - dubble
-
-- derived data types
-    - String 
-    - Array
-
-### Basic Structure of cpp  
-
-- preprocessor directive 
-
-         #include<iostream.h>
-- class 
-
-        class class_name(){}
-- Function
-
-             int main(){
-                //statements
-                ____________;
-                ____________;
-                return 0;
-             }
-
-
-### Cin and Cout in cpp
-- cin it is used to take input
-
-        int a;
-        cout << " Enter a value;
-        cin >> a;
-        int x,y;
-        cin >> a>> b;
-- cout it is used to display output
-
-            cout << "welcome to cpp";
-
-### Programs
-
-#### WAP to add two numbers
-
-    #include<iostream.h>
-    int main(){
-        int a, b ,c ; 
-        cout << "Enter two numbers ";
-        cin >> a >> b;
-        cout << "addition = ">> a+b;
-        return 0;
-    }
-
-#### To calculate percentage
-
-    #include <iostream>
-    using namespace std;
-
-    int main()
-    {
-        int phy, maths, chem, cs, eng;
-        cout << "Enter marks of physics : ";
-        cin >> phy;
-        cout << " Enter the marks of maths : ";
-        cin >> maths;
-        cout << "Enter the marks of chem : ";
-        cin >> chem;
-        cout << "Enter the marks of CS : ";
-        cin >> cs;
-        cout << "Enter the marks of english : ";
-        cin >> eng;
-        int total_marks = phy + maths + chem + cs + eng;
-        cout << "The Total marks are: " << total_marks;
-        cout << "Total percentage is " << (total_marks / 500.0) * 100;
-        return 0;
+```c++
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    int even =0;
+    int odd =1;
+    while (num > 0) {
+        int digit = num % 10;
+        if (digit % 2 == 0) {
+            even += digit;
         }
-
-### Control statements 
-
-Control statements are used to control the flow of </br>
- execution of a program
-
-- Selection Control statements
-    - if else
-
-            if (codition)
-            ___________;
-            if (condition){
-            _____________;
-            _____________;
-            _____________;}
-            else if (condition)
-            _________________;
-            else
-            ____________;
-    - switch
-
-- Iterative/loping control 
-    - while
-    - do while
-    - for 
-- jump statements
-    - break
-    - contiue
-    - goto
-#### To check weather the number is odd or even
-
-        #include<iostream>
-        using namespace std;
-        int main(){
-            int a;
-            cout<<"Enter a number : ";
-            cin >> a ;
-            if ( a % 2 == 0)
-                cout<< "The number is even ";
-            else
-                cout<<"The number is odd ";
-            return 0;
-
-        }
-#### To find the gratest number among three
-
-    #include <iostream>
-    using namespace std;
-    int main()
-    {
-    int a,b,c;
-    cout << "Enter number a,b,c : ";
-    cin >> a >> b >> c;
-    if ((a>b)&&(a>c))
-    cout << "Max number is a ";
-    else if ((b>a)&&(b>c))
-        cout << "Max nummber is b ";
-    else 
-        cout << "Max number is c ";
-    return 0;
-    }
-
-### To find sum of digits of a number 
-
-        #include <iostream>
-        using namespace std;
-        int main() {
-         int a;
-        int sum = 0;
-        cout << "Enter a number: ";
-        cin >> a;
-        while (a>0) {
-            sum+=a%10;
-                a/=10;
-        }
-        return 0;
-        }
-
-
-
-
-
-        
-# Object-oriented-programing-with-c++
-# Q1. Write a C++ program that takes two integers as input from the user and displays their sum.
-    #include <iostream>
-    int main(){
-    int a,b,c;
-    std::cout<<"\nEnter a  and b";
-    std::cin>>a>>b;
-    c=a+b;
-    std::cout<<c;
-    return 0;
-    }
-# Q2. Write a C++ program to check whether a given number is even or odd.
-    #include <iostream>
-    int main()
-    {
-    int a;
-    std::cout << "Enter a number: ";
-    std::cin >> a;
-
-    if (a % 2 == 0) {
-        std::cout << "Even number\n";
-    } else {
-        std::cout << "Odd number\n";
-    }
-    return 0;
-    }
-# Q3. Write a C++ program to print all numbers from 1 to n, where n is a number entered by the user.
-    #include <iostream>
-    using namespace std;
-
-    int main() {
-    int n;
-    cin >> n;
-    for (int i = 1; i <= n; i++)
-    {
-    cout << i << " ";
-    }
-    return 0;
-    }
-# Q4. To print sum of n natural numbers
-    #include <iostream>
-    using namespace std;
-    
-    int main(int argc, char *argv[])
-    {
-        int n, sum = 0;
-    
-        if (argc > 1)
-            n = atoi(argv[1]);
         else {
-            cout << "Enter n: ";
-            cin >> n;
+            odd *= digit;
         }
-    
-        for (int i = 1; i <= n; i++)
-            sum += i;
-    
-        cout << "Sum = " << sum;
-        return 0;
+        num /= 10;
     }
-# WAP to swap two values 
-    #include <iostream>
-    void swap(std::string &a, std::string &b){
-        std::string temp;
-        temp=a;
-        a=b;
-        b=temp;
-    }
-    int main(){
-    std::string x = "Kool aid";
-    std::string y = "Water";
-    std::string temp;
-    swap(x,y);
-    std::cout<<x <<"\n";
-    std::cout<<y <<"\n";
-    }
-## Outuput
-    Water
-    Kool aid
+    cout << "Sum of even digits:  " << even << endl; ;
+    cout << "Product of odd digits:  " << odd << endl;
+    return  0;
+}
+```
 
+###  To print factorial of a number.
+   
+```c++
+  #include <iostream>
+using namespace std;
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    int fac=1;
+    for(int i=1; i<=num; i++)
+        fac *= i;
+    cout << "Factorial of " << num << " is: " << fac << endl;
+    return 0;
+} 
+```
+### To reverse a number 
+```c++
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    int rev=0;
+    while (num > 0) {
+        rev = rev * 10 + num % 10;
+        num /= 10;
+    }
+    cout << "Reversed number: " << rev << endl;
+    return 0;
+}
+```
 
-#### This is the end of file
+### To check weather a number is palidrome or not 
+
+```c++
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    int rev = 0;
+    while (num > 0) {
+        rev = rev * 10 + num % 10;
+        num /= 10;
+    }
+    if (rev == num) {
+        cout << "The number is a palindrome." << endl;
+    } else {
+        cout << "The number is not a palindrome." << endl;
+    }
+    return 0;
+}
+```
+### To check weather a number is prime or not 
+
+```c++
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    int p = 0;
+    for (int i = 1; i <= num; i++) {
+        if (num % i == 0) {
+        p += 1;}
+    }
+    if (p > 2) {
+        cout << "The number is not prime." << endl;
+    } else {
+        cout << "The number is prime." << endl;
+    }
+    return 0;
+}
+```
+
+### To print table of a number
+
+```c++
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    for(int i = 1; i <=10; i++){
+        cout << num << " x " << i << " = " << num * i << endl;
+    }
+    return 0;
+}
+```
+
+### To generate a fibonacci series upto a given number 
+
+```c++
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 0;
+    int b = 1;
+    int num;
+    cout << "Enter the number of Fibonacci numbers to generate: ";
+    cin >> num;
+    cout << "Fibonacci sequence: ";
+    for (int i = 0; i < num; i++) {
+        cout << a << " ";
+        int next = a + b;
+        a = b;
+        b = next;}
+    return 0;
+          
+}
+```
+
+### Write a program to find $x^y$
+
+```c++
+#include <iostream>
+using namespace std;
+int main() {
+    int x , y ;
+    cout << "Enter two numbers: ";
+    cin >> x >> y ;
+    int ans = 1;
+    for (int i=1; i<=y; i++){
+        ans*=x;}
+    cout << x << "^" << y << " = " << ans;
+    return 0;  
+}
+```
+
+###  
