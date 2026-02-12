@@ -17,4 +17,26 @@ void add(int x, int y) {
     cout << "The sum of " << x << " and " << y << " is: " << sum << endl;
 }
 ```
+
+---
+
+### Default argument functions
+
+```c++
+#include <iostream>
+void add(int x, int y=1);
+using namespace std;
+int main() {
+    int a ;
+    cout << "Enter two numbers: ";
+    cin >> a;
+    add(a);
+    return 0;
+}
+void add(int x, int y) {
+    int sum = x + y;
+    cout << "The number increased by 1 :  " << sum << endl;
+}
+```
+
 ---
