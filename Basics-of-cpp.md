@@ -656,3 +656,30 @@ int main() {
 ```
 
 ---
+
+### To find the reverse of a number 
+
+```c++
+#include <iostream>
+using namespace std;
+int main() {
+    int x;
+    cout << "Enter a number to find the reverse ";
+    cin >> x;   
+    int rev = 0;
+    while (x > 0) {
+        rev = rev * 10 + x % 10;
+        x = x / 10;
+    
+    }
+    cout << "The reverse of the number is: " << rev << endl;
+    return 0;
+}
+```
+
+---
+
+
+
+
+
