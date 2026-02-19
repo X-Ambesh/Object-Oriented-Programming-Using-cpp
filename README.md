@@ -25,6 +25,24 @@ int main(){
 
 ---
 
+### To swap two numbers without using third variable
+
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+    int x,y;
+    cout<<"Enter two numbers: ";
+    cin>>x>>y;
+    x=x+y;
+    y=x-y;
+    x=x-y;
+    cout<<"After swapping: "<<x<<" "<<y;
+}
+```
+
+---
+
 ### Write a code to print sum of even digits and product of odd digits of a number.
 
 ```c++
