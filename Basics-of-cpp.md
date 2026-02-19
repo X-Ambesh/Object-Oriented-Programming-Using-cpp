@@ -872,5 +872,53 @@ int main(){
 
 ---
 
+### Pass by value and pass by reference
+
+### Pass by value
+
+```cpp
+#include <iostream>
+using namespace std;
+int swap(int a, int b){
+    int temp;
+    temp=a;
+    a=b;
+    b=temp;
+    return a,b;
+}
+int main(){
+    int x,y;
+    cout<<"Enter two numbers: ";
+    cin>>x>>y;
+    swap(x,y);
+    cout<<"After swapping: "<<x<<" "<<y; //No change x=x & y=y
+}
+```
+
+---
+
+### Pass by reference
+
+```cpp
+#include <iostream>
+using namespace std;
+int swap(int& a, int& b){
+    int temp;
+    temp=a;
+    a=b;
+    b=temp;
+    return a,b;
+}
+int main(){
+    int x,y;
+    cout<<"Enter two numbers: ";
+    cin>>x>>y;
+    swap(x,y);
+    cout<<"After swapping: "<<x<<" "<<y;//Change x=y & y=x 
+}
+```
+
+---
+
 
 
