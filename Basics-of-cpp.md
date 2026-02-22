@@ -965,7 +965,7 @@ int main(){
 
 ---
 
-### To access the value of the variable whose address is in the pointer 
+### To access and change the value of the variable whose address is in the pointer 
 > Using dereference operator (*) operator
 
 ```cpp
@@ -975,6 +975,8 @@ int main(){
     int x = 3;
     int*p = &x;
     cout<<*p<<endl;
+     *p = 5;
+    cout<<x<<endl;
 
 }
 ```
@@ -982,5 +984,6 @@ int main(){
 >`Output`
 >
 >3
+>5
 
 ---
