@@ -933,7 +933,34 @@ int main(){
 ```
 
 >`Output`
+>
 >0xa7ec3ff93c
+>
 >0xa7ec3ff938
+
+---
+
+### To store address
+
+```cpp
+#include <iostream>
+using namespace std;
+int main(){
+    int x = 3;
+    int*p = &x;
+    cout<<&x<<endl;
+    cout<<p<<endl;
+    cout<<*p<<endl;
+
+}
+```
+
+>`Output`
+>
+>0x6839bff674
+>
+>0x6839bff674
+>
+>
 
 ---
