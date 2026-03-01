@@ -155,3 +155,24 @@ int main() {
 ```
 
 ---
+
+#### To find maximum value in a 2D array in C++
+
+```cpp
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[3][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+    int max= INT_MIN;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 4; j++) {
+            if (arr[i][j] > max) {
+                max = arr[i][j];
+            }
+    }
+}
+    cout << "Maximum value in the 2D array is: " << max << endl;
+}
+```
+
+---
