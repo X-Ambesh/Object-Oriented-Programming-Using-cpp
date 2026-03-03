@@ -88,3 +88,54 @@ int main() {
 ---
 ### 8. `string.erase(beginng_index,ending_index`)
 ---
+
+#### strig methods in c++
+
+```cpp
+#include <iostream>
+#include <string>
+#include <algorithm>   // Required for reverse()
+
+using namespace std;
+
+int main()
+{
+    string str = " Ambesh";
+    cout << str << endl;
+
+    str.push_back('a');
+    cout << str << endl;
+
+    str.pop_back();
+    cout << str << endl;
+
+    str.append(" Yadav");
+    cout << str << endl;
+
+    str.clear();
+    cout << str << endl;
+
+    str = str + "Ambesh Yadav";
+    cout << str << endl;
+
+    reverse(str.begin(), str.end());
+    cout << str << endl;
+
+    cout<<to_string(12345)<<endl;
+
+    cout<<stoi("12345")<<endl;
+    return 0;
+}
+```
+
+```Output
+Ambesh
+ Ambesha
+ Ambesh
+ Ambesh Yadav
+
+Ambesh Yadav
+vadaY hsebmA
+12345
+12345
+```
