@@ -70,4 +70,11 @@ To achieve more than one thing from single thing.
 
 #### 5 Inheritance
 
-   - 
+A derived class(Child Class) can inherit from a base class(Superclass), which means it can use the properties and methods of the base class. 
+
+1. Single Inheritance: A derived class inherits from a single base class.
+2. Multiple Inheritance: A derived class inherits from more than one base class.
+3. Multilevel Inheritance: A derived class inherits from a base class, which itself is derived from another base class.
+4. Hierarchical Inheritance: Multiple derived classes inherit from a single base class.
+5. Hybrid Inheritance: A combination of two or more types of inheritance.
+
