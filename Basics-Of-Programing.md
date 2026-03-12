@@ -100,5 +100,19 @@ Is a relation is a relationship between two classes where one class is a subclas
 #### Has a relation 
 Has a relation is a relationship between two classes where one class has a property that is an instance of another class. The class that has the property is called the "has a" class, and the class that is the property is called the "is a" class.
 
+---
 
+#### Errors in c++
+
+There are three types of errors in c++:
+
+1. Syntax errors or compilation errors: These are errors that occur when the code violates the syntax rules of the programming language. For example, forgetting to include a semicolon at the end of a statement or using an undeclared variable.
+   
+
+2. Logical errors or runtime errors: These are errors that occur when the code does not produce the expected output due to a mistake in the logic of the program. For example, using the wrong operator in a calculation or having an infinite loop.
+   
+
+3. Linker errors: These are errors that occur when the linker is unable to find the necessary libraries or object files to create an executable. For example, forgetting to include a library or having a mismatch between the function declarations and definitions.
+   
+   
 
